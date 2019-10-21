@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+
+    double h = in.nextInt();
+    double b = in.nextInt();
+    double c = in.nextInt();
+    double m = -b/h; 
+    double e = b;
+    double i;
+    int contador = 0;
+    
+
+   for(i = 1;i<b;i++){
+   if(c < (m * i + e)){
+     contador++;
+   }
+   }System.out.print(contador);
+  }
+}
